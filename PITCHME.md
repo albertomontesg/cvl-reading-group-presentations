@@ -21,7 +21,7 @@
 
 # Solution
 
-*undo* Camara Perspective Projection by 
+*undo* Camara Perspective Projection by
 
 **scale normalization**
 
@@ -47,3 +47,30 @@ $m$: object in the $n$-th image; $i$: pixel index; $l(m)$: category label of ins
 
 $$H_i^{(n)} = \frac{AveSize(l(m))}{Size(m)}$$
 
+$$G_i = \frac{1}{N}\sum_{n=1}^N H_i^{(n)}$$
+
+$$V_i^{(n)} = H_i^{(n)} + \delta \times G_i$$
+
++++
+
+#### Training Samples
+
+![PEN Training](assets/pen_training.png)
+
+---
+
+### Perspective-aware Scene Parsing
+
+![Parsing Network](assets/parsing_network.png)
+
+ResNet-101 with shared parameters from `conv1` to `res3_3b3`.
+
+---
+
+### Perspective-aware CRFs
+
+$$\mathcal{E}(l) = \sum_i \psi_u(l_i) + \sum_{i,j} \psi_{p,persp}(l_i, l_j)$$
+
+$$\psi_{p,persp}(l_i, l_j) = \mu(p_i, p_j) \nu(l_i, l_j) \kappa(f_i, f_j)$$
+
+$$\mu(p_i, p_j) = d_k(\frac{\sum_{m \in \hat{V}} \nu_m}{|\hat{V}|} / \frac{\sum_{n \in B_k} \nu_n}{|B_k|})$$
