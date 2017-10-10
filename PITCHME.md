@@ -5,17 +5,17 @@
 
 ## Self-Driving Car
 
-![Self-Driving Cars](assets/md/assets/self-driving.gif)
+![Self-Driving Cars](assets/self-driving.gif)
 
 ---
 
 # Problem
-![Problem](assets/md/assets/problem_1.png)
+![Problem](assets/problem_1.png)
 
 +++
 
-![Problem](assets/md/assets/problem_2.png)
-![Problem](assets/md/assets/problem_3.png)
+![Problem](assets/problem_2.png)
+![Problem](assets/problem_3.png)
 
 ---
 
@@ -29,7 +29,7 @@
 
 # FoveaNet
 
-![FoveaNet](assets/md/assets/foveanet.png)
+![FoveaNet](assets/foveanet.png)
 
 FCN in FoveaNet: **ResNet-101**
 
@@ -37,7 +37,7 @@ FCN in FoveaNet: **ResNet-101**
 
 ### Perspective Estimation Network
 
-![PEN](assets/md/assets/pen.png)
+![PEN](assets/pen.png)
 
 +++
 
