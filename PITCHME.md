@@ -22,10 +22,15 @@
 
 ## Intuition
 
-|||
-| ---- | ---- |
-|![](assets/problem_image.png) | ![](assets/problem_table.png) |
+![](assets/problem_image.png)
 
++++
+
+## Intuition
+
+<div style="width:80%;margin:auto;">
+![](assets/problem_table.png)
+</div>
 
 ---
 
